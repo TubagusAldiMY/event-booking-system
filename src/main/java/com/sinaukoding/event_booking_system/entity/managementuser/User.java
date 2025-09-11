@@ -1,16 +1,16 @@
 package com.sinaukoding.event_booking_system.entity.managementuser;
 
 import com.sinaukoding.event_booking_system.entity.app.BaseEntity;
+import com.sinaukoding.event_booking_system.entity.master.Booking;
 import com.sinaukoding.event_booking_system.model.enums.Role;
 import com.sinaukoding.event_booking_system.model.enums.Status;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -54,5 +54,9 @@ public class User extends BaseEntity {
 
     private String token;
     private LocalDateTime expiredTokenAt;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @Builder.Default
+    private Set<Booking> bookings = new HashSet<>();
 
 }
