@@ -1,7 +1,7 @@
 package com.sinaukoding.event_booking_system.entity.managementuser;
 
 import com.sinaukoding.event_booking_system.entity.app.BaseEntity;
-import com.sinaukoding.event_booking_system.entity.master.Booking;
+//import com.sinaukoding.event_booking_system.entity.master.Booking;
 import com.sinaukoding.event_booking_system.model.enums.Role;
 import com.sinaukoding.event_booking_system.model.enums.Status;
 import jakarta.persistence.*;
@@ -55,8 +55,8 @@ public class User extends BaseEntity {
     private String token;
     private LocalDateTime expiredTokenAt;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    @Builder.Default
-    private Set<Booking> bookings = new HashSet<>();
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+//    @Builder.Default
+//    private Set<Booking> bookings = new HashSet<>();
 
 }
