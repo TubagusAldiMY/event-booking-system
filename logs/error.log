@@ -1,0 +1,12 @@
+2025-09-12_11:35:35.005 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-12_11:35:37.404 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-12_11:35:37.404 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "ukrycw44p7cruupkosx3ibmj9q3" of relation "m_user" does not exist, skipping
+2025-09-12_11:35:37.408 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-12_11:35:37.409 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "ukg3htmq02oxd6h13cjm978n0q9" of relation "m_user" does not exist, skipping
+2025-09-12_11:35:37.413 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-09-12_11:35:37.414 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "ukbrmb54ld0gqstogmb812xw951" of relation "m_user" does not exist, skipping
+2025-09-12_11:35:38.639 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-12_11:56:25.160 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-12_11:56:28.447 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-12_13:50:52.806 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-12_13:50:56.031 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
