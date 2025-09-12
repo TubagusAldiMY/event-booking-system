@@ -57,8 +57,12 @@ public class Event extends BaseEntity {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String lokasi;
 
-    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+//    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+//    @Builder.Default
+//    private Set<Booking> bookings = new HashSet<>();
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "event", orphanRemoval = true, fetch = FetchType.LAZY)
     @Builder.Default
-    private Set<Booking> bookings = new HashSet<>();
+    private Set<EventImage> listImage = new HashSet<>();
 
 }
