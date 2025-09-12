@@ -11,3 +11,4 @@ public record UserRequestRecord(String id,
                                 Status status,
                                 Role role) {
 }
+
